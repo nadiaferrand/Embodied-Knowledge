@@ -1,0 +1,190 @@
+<style>body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #535c5f;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #054740;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #005b4f;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #2e230f;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #888;
+}
+
+/* Add the banner image */
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Citation container styling */
+.citation-container {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    visibility: visible;
+    /* Always visible */
+    transition: opacity 1s ease-in-out;
+}
+
+.quote-text p {
+    font-size: 1.2em;
+    color: #333;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.citation-author p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Animations for each quote */
+@keyframes fadeInFromLeft {
+    0% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrambleWords {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(20px, -20px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-20px, 20px);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translate(10px, 10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes reverseCitation {
+    0% {
+        transform: scaleX(-1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+/* Word-by-word for first quote */
+@keyframes wordByWord {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Styling for specific quote containers */
+.quote1 {
+    background-color: rgb(113, 128, 151);
+    border-left: 5px solid #00796b;
+    animation: fadeInFromLeft 6s ease-in-out infinite;
+    display: inline-block;
+}
+
+.quote2 {
+    background-color: #beb1a2;
+    border: 1px solid #009688;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: scrambleWords 6s ease-in-out infinite;
+}
+
+.quote3 {
+    background-color: rgb(135, 121, 121);
+    border-left: 5px solid #00796b;
+    animation: reverseCitation 6s ease-in-out infinite;
+}
+
+/* Word-by-word for first quote */
+.quote1 p {
+    display: inline-block;
+    animation: wordByWord 3s ease-in-out infinite;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+/* Add a space for each word to appear gradually */
+.quote1 span {
+    opacity: 0;
+    animation: wordByWord 3s ease-in-out infinite;
+    animation-delay: calc(0.5s * var(--wordIndex));
+}
+
+</style>

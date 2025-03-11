@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing from the Body: Embodied Knowledge in Kenya’s Water Infrastructure</title>
+
+   
+</head>
+<body>
+    <!-- Banner Image -->
+    <img src="Women%20carrying%20water.png" alt="Women carrying water" class="banner-image">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">The Women</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <style>
+        nav {
+            background-color: #00796b; /* Dark teal background */
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+    
+        nav ul li {
+            margin: 0 15px;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s ease-in-out;
+        }
+    
+        nav ul li a:hover {
+            background-color: #004d40; /* Darker teal when hovered */
+            border-radius: 5px;
+        }
+    
+        /* Push the content down so it doesn't hide behind the navbar */
+        body {
+            padding-top: 50px;
+        }
+    </style>
+    
+
+    <div class="container">
+        <header>
+            <h1>Designing from the Body: Embodied Knowledge in Kenya’s Water Infrastructure</h1>
+        </header>
+
+        <section id="Introduction">
+            <h2>Introduction</h2>
+            <p>The design of urban infrastructure is often seen through the lens of top-down planning and technical expertise. However, this overlooks the invaluable knowledge embedded in daily human experience, particularly among marginalized groups. In Kenya’s informal settlements and rural areas, women are key players in navigating and managing water scarcity. This essay aims to explore the embodied knowledge these women possess—knowledge shaped by lived experience, movement, and bodily engagement with the environment. By integrating this knowledge into urban design, we can create water systems that are not only functional but also resilient and adaptive to local needs.</p>
+
+            <!-- First quote (word-by-word animation) -->
+            <div class="citation-container quote1">
+                <div class="quote-text">
+                    <p>
+                        <span style="--wordIndex: 1;">"Women</span> 
+                        <span style="--wordIndex: 2;">are</span> 
+                        <span style="--wordIndex: 3;">the</span> 
+                        <span style="--wordIndex: 4;">architects</span> 
+                        <span style="--wordIndex: 5;">of</span> 
+                        <span style="--wordIndex: 6;">the</span> 
+                        <span style="--wordIndex: 7;">invisible,</span> 
+                        <span style="--wordIndex: 8;">shaping</span> 
+                        <span style="--wordIndex: 9;">cities</span> 
+                        <span style="--wordIndex: 10;">with</span> 
+                        <span style="--wordIndex: 11;">the</span> 
+                        <span style="--wordIndex: 12;">knowledge</span> 
+                        <span style="--wordIndex: 13;">only</span> 
+                        <span style="--wordIndex: 14;">their</span> 
+                        <span style="--wordIndex: 15;">bodies</span> 
+                        <span style="--wordIndex: 16;">can</span> 
+                        <span style="--wordIndex: 17;">hold." </span>
+                    </p>
+                </div>
+                <div class="citation-author">
+                    <p><em>Simians, Cyborgs, and Women</em> – Donna Haraway, 1991</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Theoretical-Framework">
+            <h2>Theoretical Framework: Embodied Knowledge in Urban Design</h2>
+            <p>The notion of embodied knowledge can be understood through the lens of phenomenology, where space is not merely a backdrop to human activity but something we experience through our bodies. Merleau-Ponty (1962) contends that the body is central to how we perceive and interact with the world, including the design of spaces like urban environments.</p>
+
+            <!-- Second quote -->
+            <div class="citation-container quote2">
+                <div class="quote-text">
+                    <p>"Space is the body’s canvas, drawn with every step, every breath, every thought." – Maurice Merleau-Ponty, 1962</p>
+                </div>
+                <div class="citation-author">
+                    <p><em>Phenomenology of Perception</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Women-and-Water">
+            <h2>Women & Water Infrastructure in Kenya: Designing from Lived Experience</h2>
+            <p>In Kenya, particularly in areas like Kitui and Nairobi's informal settlements, women develop intimate knowledge of their environment, shaped by the daily realities of water scarcity. Their deep understanding of local water sources, pathways, and social dynamics enables them to manage and optimize water usage. This knowledge, often overlooked in formal planning, can be a valuable asset in urban infrastructure design.</p>
+
+            <!-- Third quote -->
+            <div class="citation-container quote3">
+                <div class="quote-text">
+                    <p>"Women's daily labor in water collection is not just physical work—it is the creation of spatial knowledge." – Author's Insight</p>
+                </div>
+                <div class="citation-author">
+                    <p><em>Author's Insight on Water Infrastructure</em></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Embodied Knowledge in Urban Infrastructure</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple function to add the word-by-word animation
+        const quote1Words = document.querySelectorAll('.quote1 span');
+        setInterval(() => {
+            quote1Words.forEach((word, index) => {
+                word.style.opacity = 1;  // Loop through and show the words
+            });
+        }, 1000); // Delay in ms for visibility
+    </script>
+</body>
+</html>
